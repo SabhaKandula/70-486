@@ -6,6 +6,45 @@
 
 > Starting off with the Plural Sight intro to MVC 5 [PluralSight](https://app.pluralsight.com/paths/skills/mvc5). The first _review_ gives a general rundown on the state of the various technologies that will be covered in the exam.  There is no discussion on technology choice.
 
+- Microsoft web technology options (based on HTTP Handler)
+  - Standard
+    - ASP.NET Web Forms
+    - ASP.NET MVC (6)
+    - ASP.NET HTML
+  - Core
+    - ASP.NET MVC (6)
+    - ASP.NET HTML
+- ASP.NET MVC (5) Request Lifecycle
+  - Routing
+    - URL Routing Module
+    - MVC Route Handler
+    - MVC HttpHandler
+  - Controller
+    - Controller factory
+      - Controller Resolution
+    - DI
+  - Action Execution
+    - Model Binding
+    - Action Filters (Action Executing)
+    - Action (User Code)
+    - Action Filters (Action Executed)
+    - Action Result
+  - Result Execution (as view request)
+    - Result Filter (Result Executing)
+      - Invoke Action Result
+    - [Render View]
+    - Result Filter (Result Executed)
+- ASP.NET MVC(5) Applicaiotn Lifecycle
+  - `MVCApplication:HttpApplication`
+    - `ApplicationStart`
+      - Global registrations
+        - Areas
+        - Filters
+        - Routes
+        - Bundles (scripts, css)
+    - `ApplicationEnd`
+      - yeah right, not really a used event
+
 #### Plan data access
 
 - [Working with data in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/data/?view=aspnetcore-2.1) 2017-10-13
