@@ -15,32 +15,49 @@
     - ASP.NET MVC (6)
     - ASP.NET HTML
 - ASP.NET MVC (5) Request Lifecycle
-  - Routing
-    - URL Routing Module
-    - MVC Route Handler
-    - MVC HttpHandler
-  - Controller
-    - Controller factory
-      - Controller Resolution
-    - DI
-  - Action Execution
-    - Model Binding
-    - Action Filters (Action Executing)
-    - Action (User Code)
-    - Action Filters (Action Executed)
-    - Action Result
-  - Result Execution (as view request)
-    - Result Filter (Result Executing)
-      - Invoke Action Result
-    - [Render View]
-    - Result Filter (Result Executed)
-- ASP.NET MVC(5) Applicaiotn Lifecycle
+  - `BeginRequest`
+  - `AuthenticateRequest`
+  - `AuthorizeRequest`
+  - `ResolveRequestHandler`
+    - selects route
+  - `MapRequestHandler`
+  - `AcquireRequestState`
+  - `RequestHandlerExecute`
+    - Routing
+      - URL Routing Module
+      - MVC Route Handler
+      - MVC HttpHandler
+    - Controller
+      - Controller factory
+        - Controller Resolution
+      - DI
+    - Action Execution
+      - Model Binding
+      - Action Filters (Action Executing)
+      - Action (User Code)
+      - Action Filters (Action Executed)
+      - Action Result
+    - Result Execution (as view request)
+      - Result Filter (Result Executing)
+        - Invoke Action Result
+      - [Render View]
+      - Result Filter (Result Executed)
+  - `UpdateRequestCache`
+  - `LogRequest`
+  - `EndRequest`
+- ASP.NET MVC(5) Application Lifecycle
   - `MVCApplication:HttpApplication`
+    - Pre-Application-Start
+      - not frequently used
+      - register custom modules
+      - defined in an assembly level attribute
+        - `[assembly:PreApplicationStartMethod(System.TypeOf(MvcApplication),"MyRegistrationMethodName")]`
     - `ApplicationStart`
       - Global registrations
         - Areas
         - Filters
         - Routes
+          - create route handlers and add them to the route collection
         - Bundles (scripts, css)
     - `ApplicationEnd`
       - yeah right, not really a used event
