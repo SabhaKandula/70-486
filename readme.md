@@ -198,7 +198,9 @@ Decorate actions or controllers with the `[Authorize]` attribute to force authen
 
 ## Routing
 
-[ASP.NET 5 Deep Dive: Routing](http://stephenwalther.com/archive/2015/02/07/asp-net-5-deep-dive-routing)
+I started off here, [ASP.NET 5 Deep Dive: Routing](http://stephenwalther.com/archive/2015/02/07/asp-net-5-deep-dive-routing), but this site immediately starts subclassing the `RouteBase` and that's not likely on the exam.  I went back to the horses mouth: [RouteCollection](https://docs.microsoft.com/en-us/dotnet/api/system.web.routing.routecollection?view=netframework-4.7.2) and [Route](https://docs.microsoft.com/en-us/dotnet/api/system.web.routing.route?view=netframework-4.7.2).  Routes are stored in the `RouteCollection`, which is a `Collection<T> where T:RouteBase`.  THre `RouteCollection` itself is part of the `RouteTable`.  The only out of the box derived class of `RouteBase` is `Route`.  The constructors of the `Route` class are the important thing here.
+
+
 
 ## The Shoulders of Others
 
