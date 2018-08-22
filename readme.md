@@ -10,6 +10,12 @@ There is a Microsoft Virtual Academy (MVA) on [MVC4](https://mva.microsoft.com/e
 
 > This is MVC4! and extremely introductory, also the player keeps resetting itself x1.0 time after the page is paused.
 
+Off to round up a resource on *routes*:  
+
+An independent page is the best I can find on [ASP.NET 5 Deep Dive: Routing](http://stephenwalther.com/archive/2015/02/07/asp-net-5-deep-dive-routing).  Starting here and doing a couple of exercises.
+
+From the ASP.NET site: [Routing to controller actions in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.1).  If I have time I'll review this.
+
 ## Design the application architecture (15-20%)
 
 - Plan the application layers
