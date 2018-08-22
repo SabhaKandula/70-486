@@ -200,8 +200,42 @@ Decorate actions or controllers with the `[Authorize]` attribute to force authen
 
 I started off here, [ASP.NET 5 Deep Dive: Routing](http://stephenwalther.com/archive/2015/02/07/asp-net-5-deep-dive-routing), but this site immediately starts subclassing the `RouteBase` and that's not likely on the exam.  I went back to the horses mouth: [RouteCollection](https://docs.microsoft.com/en-us/dotnet/api/system.web.routing.routecollection?view=netframework-4.7.2) and [Route](https://docs.microsoft.com/en-us/dotnet/api/system.web.routing.route?view=netframework-4.7.2).  Routes are stored in the `RouteCollection`, which is a `Collection<T> where T:RouteBase`.  THre `RouteCollection` itself is part of the `RouteTable`.  The only out of the box derived class of `RouteBase` is `Route`.  The constructors of the `Route` class are the important thing here.
 
+There is a lot of old content on the web regarding routes and configuring routes.  
 
+In _core_ the routes are added to the `UseMVC` middleware:
 
+```csharp
+// these next two are equivalent
+app.UseMvc(routes =>
+{
+    routes.MapRoute(
+        name: "default",
+        template: "{controller=Home}/{action=Index}/{id?}");
+});
+
+routes.MapRoute(
+    name: "default_route",
+    template: "{controller}/{action}/{id?}",
+    defaults: new { controller = "Home", action = "Index" });
+```
+
+The missing pieces: `datatokens` and `constraints`.
+
+The following link is a good low level dive into [Routing in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-2.1), it explains the parts of the `MapRoute` extension method.
+
+This article has some good content on attributes and is more general the the first, [Routing to controller actions in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.1).  It covers off the basic syntax and using attributes in paths.
+
+In _framework_ the routes are added to from the application start event calling the configure:
+
+```csharp
+routes.MapRoute(
+    name: "Default",
+    url: "{controller}/{action}/{id}",
+    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+);
+```
+
+What is comm0n here is the `RouteCollection.MapRoute` method.
 ## The Shoulders of Others
 
 - [Developing ASP.NET MVC Web Applications(70-486)](https://github.com/bishopsmove/Certification-Study-Guides/tree/master/Microsoft/MCSD/70-486.MVC) from 2016-09-15

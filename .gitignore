@@ -1,0 +1,6 @@
+src
+**/.vs/*
+**/packages/*
+[Bb]in
+[Oo]bj
+[Ll]ib
