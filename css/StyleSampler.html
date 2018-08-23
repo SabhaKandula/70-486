@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Selector Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        #div1 {
+            background-color: red;
+        }
+
+        .colouredDiv {
+            background-color: blue;
+        }
+
+        #div1,
+        .colouredDiv {
+            font-size: x-large;
+        }
+        .plain{
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        div>p{
+            color: yellow;
+        }
+        div+p{
+            color: magenta;
+        }
+        p~p{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <p>A paragraph of text inside <span class="plain">#div1</span>.</p>
+        <p>A second paragraph of text inside <span class="plain">#div1</span>, yet after the the first <span class="plain">p</span>.</p>
+        DIV 1
+    </div>
+        <p>A third paragraph of text outside <span class="plain">#div1</span>, yet before the the second <span class="plain">.colouredDiv</span>.</p>
+    <div class="colouredDiv">
+        COLOURED DIV
+        <p>A paragraph of text inside <span class="plain">.colouredDiv</span>.</p>
+    </div>
+
+</body>
+
+</html>

@@ -235,10 +235,16 @@ routes.MapRoute(
 );
 ```
 
-What is comm0n here is the `RouteCollection.MapRoute` method.
+What is common here is the `RouteCollection.MapRoute` method.
+
+## CSS Selectors
+
+See the [sampler](css/StyleSampler.html).
+
 ## The Shoulders of Others
 
 - [Developing ASP.NET MVC Web Applications(70-486)](https://github.com/bishopsmove/Certification-Study-Guides/tree/master/Microsoft/MCSD/70-486.MVC) from 2016-09-15
 - [Failed the Turing Test](http://failedturing.blogspot.com/search/label/70-486) from 2016-05 and earlier
-- [NOTES FOR THE 70-486 ASP.NET MVC CERTIFICATION](https://www.barbarianmeetscoding.com/wiki/asp-net-mvc/asp-net-mvc-certification/) from 2015-05-12
+- [NOTES FOR THE 70-486 ASP.NET MVC CERTIFICATION]
+- (https://www.barbarianmeetscoding.com/wiki/asp-net-mvc/asp-net-mvc-certification/) from 2015-05-12
 - [Study Notes for 70-486 - Developing ASP.NET MVC 4 Web Applications](http://blog.adnanmasood.com/2013/05/20/study-notes-for-70-486-developing-asp-net-mvc-4-web-applications/)
