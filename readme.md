@@ -180,7 +180,7 @@ Develop the User Experience (15-20%)
   - `ApplicationEnd`
     - yeah right, not really a used event
 
-### Security
+## Security
 
 - none
   - just that, none
@@ -193,6 +193,10 @@ Develop the User Experience (15-20%)
 - windows
   - intranet
   - Active Directory - AD
+
+### Client Certificates
+
+### Claims Based
 
 Decorate actions or controllers with the `[Authorize]` attribute to force authentication.  The opposite attribute is the `[AllowAnonymous]` attribute.
 
@@ -240,6 +244,8 @@ What is common here is the `RouteCollection.MapRoute` method.
 ## CSS Selectors
 
 See the [sampler](css/StyleSampler.html).
+
+## Localization
 
 ## The Shoulders of Others
 
