@@ -2,6 +2,8 @@
 
 The Microsoft Exam [page](https://www.microsoft.com/en-us/learning/exam-70-486.aspx).
 
+Found this _Dino Esposito_ book on [Safari](https://www.safaribooksonline.com/library/view/programming-aspnet-core/9781509304448/).  Looks like a good weekend read.
+
 Starting off with the Plural Sight intro to MVC 5 [PluralSight](https://app.pluralsight.com/paths/skills/mvc5). The first _review_ gives a general rundown on the state of the various technologies that will be covered in the exam.  There is no discussion on technology choice.
 
 > The the Plural Sight content is general at best, the advanced courses dive into very narrow channels that are not necessarily useful on the exam.
@@ -193,6 +195,8 @@ Develop the User Experience (15-20%)
 - windows
   - intranet
   - Active Directory - AD
+
+[MVC Security - ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-2.1)
 
 ### Client Certificates
 
