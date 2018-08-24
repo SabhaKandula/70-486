@@ -22,19 +22,19 @@ From the ASP.NET site: [Routing to controller actions in ASP.NET Core](https://d
 
 - Plan the application layers
   - Plan data access;
+    - [Working with data in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/data/?view=aspnetcore-2.1) 2017-10-13
+    - [Getting Started with Entity Framework 6 Code First using MVC 5](Getting Started with Entity Framework 6 Code First using MVC 5) 2015-10-21
+    - [Create the Data Access Layer](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer) 2014-09-07
+    - [ASP.NET Data Access - Recommended Resources](https://docs.microsoft.com/en-us/aspnet/whitepapers/aspnet-data-access-content-map) 2014-04-03
+    - [PluralSight](https://app.pluralsight.com/player?course=aspdotnet-mvc5-fundamentals&author=scott-allen&name=aspdotnet-mvc5-fundamentals-m6-ef6&clip=0&mode=live) 2013-11
   - plan for separation of concerns, appropriate use of models, views, controllers, components, and service dependency injection;
   - choose between client-side and server-side processing;
   - design for scalability;
   - choose between ASP.NET Core and ASP.NET;
+    - in _core_ attribute routing is on by default, in _framework_ it must be explicitly enable
+    - d
   - choose when to use .NET standard libraries
 
-### Data Access
-
-- [Working with data in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/data/?view=aspnetcore-2.1) 2017-10-13
-- [Getting Started with Entity Framework 6 Code First using MVC 5](Getting Started with Entity Framework 6 Code First using MVC 5) 2015-10-21
-- [Create the Data Access Layer](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer) 2014-09-07
-- [ASP.NET Data Access - Recommended Resources](https://docs.microsoft.com/en-us/aspnet/whitepapers/aspnet-data-access-content-map) 2014-04-03
-- [PluralSight](https://app.pluralsight.com/player?course=aspdotnet-mvc5-fundamentals&author=scott-allen&name=aspdotnet-mvc5-fundamentals-m6-ef6&clip=0&mode=live) 2013-11
 
 - Design a distributed application
   - Design a hybrid application; plan for session management in a distributed environment; plan web farms; run Microsoft Azure services on-premises with Azure Pack; enable deferred processing through Azure features including queues, scheduled and on-demand jobs, Azure Functions, and Azure Web Jobs

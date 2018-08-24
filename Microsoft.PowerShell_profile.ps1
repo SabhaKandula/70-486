@@ -1,5 +1,6 @@
 Import-Module posh-git
-Start-SshAgent
+#! the start-sshagent does seem to be working anymore - need to figure this out
+# Start-SshAgent
 Set-Location ~
 
 # Chocolatey profile
