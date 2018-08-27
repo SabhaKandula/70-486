@@ -16,6 +16,8 @@ Off to round up a resource on *routes*:
 
 An independent page is the best I can find on [ASP.NET 5 Deep Dive: Routing](http://stephenwalther.com/archive/2015/02/07/asp-net-5-deep-dive-routing).  Starting here and doing a couple of exercises.
 
+> This quickly goes south as the article starts building _alternate_ routing strategies that do not really reflect the _Microsoft_ framework.
+
 From the ASP.NET site: [Routing to controller actions in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.1).  If I have time I'll review this.
 
 ## Design the application architecture (15-20%)
@@ -31,10 +33,11 @@ From the ASP.NET site: [Routing to controller actions in ASP.NET Core](https://d
   - choose between client-side and server-side processing;
   - design for scalability;
   - choose between ASP.NET Core and ASP.NET;
-    - in _core_ attribute routing is on by default, in _framework_ it must be explicitly enable
-    - d
+    - in _core_ attribute routing is on by default, in _framework_ it must be explicitly enabled
+    - `ViewData` is a dictionary, `ViewBag` is a `DynamicObject`.
+    - the *Razor* view engine treats `<text>literal value</test>` not as markup to render but as literal string, it this case the literal string "literal", it this case the literal string "literal".
+    - **tag helpers** are ASP.NET core only.
   - choose when to use .NET standard libraries
-
 
 - Design a distributed application
   - Design a hybrid application; plan for session management in a distributed environment; plan web farms; run Microsoft Azure services on-premises with Azure Pack; enable deferred processing through Azure features including queues, scheduled and on-demand jobs, Azure Functions, and Azure Web Jobs
