@@ -31,10 +31,9 @@ From the ASP.NET site: [Routing to controller actions in ASP.NET Core](https://d
   - choose between client-side and server-side processing;
   - design for scalability;
   - choose between ASP.NET Core and ASP.NET;
-    - in _core_ attribute routing is on by default, in _framework_ it must be explicitly enable
-    - d
+    - in _core_ attribute routing is on by default, in _framework_ it must be explicitly enabled
+    - _core_ allows for controllers that are do not inherit from `Controller`, they must be decorated with `[Controller]`.
   - choose when to use .NET standard libraries
-
 
 - Design a distributed application
   - Design a hybrid application; plan for session management in a distributed environment; plan web farms; run Microsoft Azure services on-premises with Azure Pack; enable deferred processing through Azure features including queues, scheduled and on-demand jobs, Azure Functions, and Azure Web Jobs
