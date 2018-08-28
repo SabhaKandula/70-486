@@ -4,3 +4,9 @@ src
 [Bb]in
 [Oo]bj
 [Ll]ib
+
+*_BACKUP*
+*_BASE_*
+*_LOCAL_*
+*_REMOTE_*
+*orig
