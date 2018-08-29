@@ -4,6 +4,8 @@ The Microsoft Exam [page](https://www.microsoft.com/en-us/learning/exam-70-486.a
 
 Found this _Dino Esposito_ book on [Safari](https://www.safaribooksonline.com/library/view/programming-aspnet-core/9781509304448/).  Looks like a good weekend read.
 
+[AZURE](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide)
+
 Starting off with the Plural Sight intro to MVC 5 [PluralSight](https://app.pluralsight.com/paths/skills/mvc5). The first _review_ gives a general rundown on the state of the various technologies that will be covered in the exam.  There is no discussion on technology choice.
 
 > The the Plural Sight content is general at best, the advanced courses dive into very narrow channels that are not necessarily useful on the exam.
