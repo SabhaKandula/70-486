@@ -4,6 +4,11 @@ The Microsoft Exam [page](https://www.microsoft.com/en-us/learning/exam-70-486.a
 
 Found this _Dino Esposito_ book on [Safari](https://www.safaribooksonline.com/library/view/programming-aspnet-core/9781509304448/).  Looks like a good weekend read.
 
+- 3 - 10, good coverage and useful
+- 11 - 13, skim but not really relevant to exam
+- 14 - 15, generally useful
+- 16, not so much
+
 Starting off with the Plural Sight intro to MVC 5 [PluralSight](https://app.pluralsight.com/paths/skills/mvc5). The first _review_ gives a general rundown on the state of the various technologies that will be covered in the exam.  There is no discussion on technology choice.
 
 > The the Plural Sight content is general at best, the advanced courses dive into very narrow channels that are not necessarily useful on the exam.
@@ -20,58 +25,21 @@ An independent page is the best I can find on [ASP.NET 5 Deep Dive: Routing](htt
 
 From the ASP.NET site: [Routing to controller actions in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.1).  If I have time I'll review this.
 
-## Design the application architecture (15-20%)
+[debuging web applicaiton](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017)
 
-- Plan the application layers
-  - Plan data access;
-    - [Working with data in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/data/?view=aspnetcore-2.1) 2017-10-13
-    - [Getting Started with Entity Framework 6 Code First using MVC 5](Getting Started with Entity Framework 6 Code First using MVC 5) 2015-10-21
-    - [Create the Data Access Layer](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer) 2014-09-07
-    - [ASP.NET Data Access - Recommended Resources](https://docs.microsoft.com/en-us/aspnet/whitepapers/aspnet-data-access-content-map) 2014-04-03
-    - [PluralSight](https://app.pluralsight.com/player?course=aspdotnet-mvc5-fundamentals&author=scott-allen&name=aspdotnet-mvc5-fundamentals-m6-ef6&clip=0&mode=live) 2013-11
-  - plan for separation of concerns, appropriate use of models, views, controllers, components, and service dependency injection;
-  - choose between client-side and server-side processing;
-  - design for scalability;
-  - choose between ASP.NET Core and ASP.NET;
-    - in _core_ attribute routing is on by default, in _framework_ it must be explicitly enabled
-    - _core_ allows for controllers that are do not inherit from `Controller`, they must be decorated with `[Controller]`.
-    - `ViewData` is a dictionary, `ViewBag` is a `DynamicObject`.
-    - the *Razor* view engine treats `<text>literal value</test>` not as markup to render but as literal string, it this case the literal string "literal", it this case the literal string "literal".
-    - **tag helpers** are ASP.NET core only.
-  - choose when to use .NET standard libraries
+- [Working with data in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/data/?view=aspnetcore-2.1) 2017-10-13
+- [Getting Started with Entity Framework 6 Code First using MVC 5](Getting Started with Entity Framework 6 Code First using MVC 5) 2015-10-21
+- [Create the Data Access Layer](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer) 2014-09-07
+- [ASP.NET Data Access - Recommended Resources](https://docs.microsoft.com/en-us/aspnet/whitepapers/aspnet-data-access-content-map) 2014-04-03
+- [PluralSight](https://app.pluralsight.com/player?course=aspdotnet-mvc5-fundamentals&author=scott-allen&name=aspdotnet-mvc5-fundamentals-m6-ef6&clip=0&mode=live) 2013-11
 
-
-- Design a distributed application
-  - Design a hybrid application; plan for session management in a distributed environment; plan web farms; run Microsoft Azure services on-premises with Azure Pack; enable deferred processing through Azure features including queues, scheduled and on-demand jobs, Azure Functions, and Azure Web Jobs
-- Design and implement the Azure Web Apps life cycle
-  - Identify and implement Start, Run, and Stop events; code against application events in applications; configure startup tasks, including IIS, app pool configuration, and third-party tools
-- Configure state management
-  - Choose a state management mechanism including in-process, out of process, and Redis-based state management; plan for scalability; use cookies or local storage to maintain state; apply configuration settings in web.config files; implement sessionless state including query strings; configure middleware to enable session and application state in ASP.NET Core
-- Design a caching strategy
-  - Implement page output caching and data caching; create cache profiles; implement HTTP caching; implement Azure Redis caching; plan a content delivery network (CDN) strategy, for example, Azure CDN
-- Design and implement a Web Socket strategy
-  - Read and write string and binary data asynchronously; choose a connection loss strategy; decide when to use Web Sockets; implement SignalR; enable web socket features in an Azure Web App instance
-- Design a configuration management solution
-  - Manage configuration sources, including XML, JSON, and INI files; manage environment variables; implement Option objects; implement multiple environments using files and hierarchical structure; manage sensitive configuration; react to runtime configuration changes; implement a custom configuration source; secure configuration by using Azure Key Vault; use the Secret Manager tool in development to keep secrets out of your code for configuration values
-- Interact with the host environment
-  - Work with file system using file providers; work with environment variables; determine hosting environment capabilities; implement native components, including PInvoke and native dependencies for hosts including Linux and Windows; use ASP.NET hosting on an Open Web Interface for .NET (OWIN)-based server
-- Compose an application by using the framework pipeline
-  - Add custom request processing modules to the pipeline; add, remove, and configure services used in the application; design and implement middleware; design for kestrel, Http.sys web server and IIS; design and implement startup filters
-
-Develop the User Experience (15-20%)
-
-        Plan for search engine optimization and accessibility
-            Use analytical tools to parse HTML; provide an xml sitemap and robots.txt file to improve scraping; write semantic markup for accessibility, for example, screen readers; use rich snippets to increase content visibility
-        Plan and implement globalization and localization
-            Plan a localization strategy; create and apply resources to UI including JavaScript resources; set cultures; implement server side localization and globalization
-        Design and implement MVC controllers and actions
-            Apply authorization attributes, filters including global, authentication, and overriddable filters; choose and implement custom HTTP status codes and responses; implement action results; implement MVC areas; implement Dependency Injection for services in controllers
-        Design and implement routes
-            Define a route to handle a URL pattern; apply route constraints; ignore URL patterns; add custom route parameters; define areas; define routes that interoperate with Single Page Application frameworks such as Angular
-        Control application behavior by using MVC extensibility points
-            Create custom middleware and inject it into the pipeline; implement MVC filters and controller factories; control application behavior by using action results, model binders, and route handlers; inject services into a view
-        Design and implement serialization and model binding
-            Serialize models and data using supported serialization formats, including JSON, XML, protobuf, and WCF/SOAP; implement model and property binding, including custom binding and model validation; implement web socket communication in MVC; implement file uploading and multipart data; use AutoRest to build clients
+- [from MS](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/choose-aspnet-framework?view=aspnetcore-2.1)
+- [and](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server?view=aspnetcore-2.1)
+- in _core_ attribute routing is on by default, in _framework_ it must be explicitly enabled
+- _core_ allows for controllers that are do not inherit from `Controller`, they must be decorated with `[Controller]`.
+- `ViewData` is a dictionary, `ViewBag` is a `DynamicObject`.
+- the *Razor* view engine treats `<text>literal value</test>` not as markup to render but as literal string, it this case the literal string "literal", it this case the literal string "literal".
+- **tag helpers** are ASP.NET core only.
 
 - Microsoft web technology options (based on HTTP Handler)
   - Standard
