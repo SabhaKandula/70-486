@@ -8,7 +8,11 @@ Found this _Dino Esposito_ book on [Safari](https://www.safaribooksonline.com/li
 - 11 - 13, skim but not really relevant to exam
 - 14 - 15, generally useful
 - 16, not so much
+
 [AZURE](https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide)
+
+- `IRouteHandler` builds a route handler that can be passed to a route (from an MVC `RouteCollection` for example).
+- `IHttpHandler` builds a handler that takes a request and routes to a specific handler.  Must be registered with web server.
 
 Starting off with the Plural Sight intro to MVC 5 [PluralSight](https://app.pluralsight.com/paths/skills/mvc5). The first _review_ gives a general rundown on the state of the various technologies that will be covered in the exam.  There is no discussion on technology choice.
 
@@ -26,7 +30,9 @@ An independent page is the best I can find on [ASP.NET 5 Deep Dive: Routing](htt
 
 From the ASP.NET site: [Routing to controller actions in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.1).  If I have time I'll review this.
 
-[debuging web applicaiton](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017)
+[debugging web application](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017)
+
+## Data Access
 
 - [Working with data in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/data/?view=aspnetcore-2.1) 2017-10-13
 - [Getting Started with Entity Framework 6 Code First using MVC 5](Getting Started with Entity Framework 6 Code First using MVC 5) 2015-10-21
